@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPetsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontalRV"
+        android:layout_width="377dp"
+        android:layout_height="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="441dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="396dp"
+            android:layout_height="437dp">
+
+            <ImageView
+                android:id="@+id/btnSchedule"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="112dp"
+                android:background="@drawable/icon_btn"
+                android:backgroundTint="@color/black"
+                android:contentDescription="Schedule Button"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/schedule" />
+
+            <ImageView
+                android:id="@+id/btnHealth"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="112dp"
+                android:layout_marginEnd="48dp"
+                android:contentDescription="Health Button"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnSitters"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/healthw" />
+
+            <ImageView
+                android:id="@+id/btnSitters"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="112dp"
+                android:layout_marginEnd="164dp"
+                android:background="@drawable/icon_btn"
+                android:contentDescription="Sitters Button"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.587"
+                app:layout_constraintStart_toEndOf="@+id/btnSchedule"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sitterw" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="243dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="36dp"
+                android:visibility="invisible"
+                android:text="Plan your pet's day, set reminders and make things easier for you and your lil one!"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.379"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSitters" />
+
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/round_btn"
+                android:text="Go to Schedule >"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.381"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSitters" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/purple_200"
+        android:clickable="true"
+        android:contentDescription="Add pet button"
+        android:src="@drawable/ic_add"
+        app:layout_constraintEnd_toStartOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalRV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

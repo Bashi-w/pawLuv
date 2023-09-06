@@ -1,0 +1,46 @@
+{
+  "sitters": [
+    {
+      "Name": "Rachel Green",
+      "Age": "20 years old",
+      "Mobile number": "0774563390",
+      "Introduction": "Hey there pet-parent!\n\nI have always had pets growing up as a child and my love for them has grown into my adulthood even more. I have a passion for learning and understanding all different types of animals. My experience in Pet Care is from having my own pets and caring for family, friends and volunteering over the years.\n",
+      "Cover": "sitter1"
+    },
+    {
+      "Name": "Phoebe Buffay",
+      "Age": "23 years old",
+      "Mobile number": "0772318772",
+      "Introduction": "There's something truly special about the bond between humans and animals, and I've made it my mission to understand and appreciate the unique qualities of each furry friend I encounter. I'm constantly fascinated by the vast array of species and their individual needs, behaviors, and quirks.",
+      "Cover": "sitter5"
+    },
+    {
+      "Name": "Monica Geller",
+      "Age": "40 years old",
+      "Mobile number": "0812418872",
+      "Introduction": "Hello cat-parent! As a dedicated feline enthusiast, I provide expert care for your beloved cat. From playtime to cuddles, I'll make sure your furry companion feels loved, safe, and content while you're away.",
+      "Cover": "sitter3"
+    },
+    {
+      "Name": "Chandler Bing",
+      "Age": "30 years old",
+      "Mobile number": "0751672341",
+      "Introduction": "With a genuine passion for animals, I offer reliable and personalized pet sitting services. From dogs to cats and everything in between, I'll ensure your furry friend receives the utmost care, attention, and affection while you're busy or on vacation. \nRest assured, they're in good hands!",
+      "Cover": "sitter2"
+    },
+    {
+      "Name": "Joey Tribbiani",
+      "Age": "32 years old",
+      "Mobile number": "0768812109",
+      "Introduction": "As an experienced pet sitter, I understand the unique needs of your beloved companions. With a nurturing and responsible approach, I provide attentive care, engaging playtime, and plenty of cuddles. Trust me to create a safe and happy environment for your furry family members while you're away.",
+      "Cover": "sitter6"
+    },
+    {
+      "Name": "Ross Geller",
+      "Age": "35 years old",
+      "Mobile number": "07867224231",
+      "Introduction": "With expertise in pet sitting, I prioritize your furry friends' needs. Offering attentive care, engaging playtime, and a safe environment, your pets are in trusted hands. Enjoy peace of mind while you're away.",
+      "Cover": "sitter4"
+    }
+  ]
+}

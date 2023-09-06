@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthFragment">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgPet"
+        android:layout_width="153dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="96dp"
+        android:contentDescription="Image"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circular"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/lblAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/health_bg"
+        android:fontFamily="@font/montserrat"
+        android:text="Age"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/imgPet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:fontFamily="@font/montserrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/lblAge"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/lblAge"
+        app:layout_constraintTop_toTopOf="@+id/lblAge" />
+
+    <TextView
+        android:id="@+id/lblGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/health_bg"
+        android:fontFamily="@font/montserrat"
+        android:text="Gender"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/imgPet"
+        app:layout_constraintTop_toBottomOf="@+id/lblAge" />
+
+    <ImageView
+        android:id="@+id/imgGender"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/ic_male"
+        app:layout_constraintEnd_toEndOf="@+id/lblGender"
+        app:layout_constraintTop_toTopOf="@+id/lblGender" />
+
+
+    <TextView
+        android:id="@+id/lblWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/health_bg"
+        android:fontFamily="@font/montserrat"
+        android:text="Weight"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/imgPet"
+        app:layout_constraintTop_toBottomOf="@+id/lblGender" />
+
+    <TextView
+        android:id="@+id/txtPHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/health_bg"
+        android:fontFamily="@font/montserrat"
+        android:text="Height"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/imgPet"
+        app:layout_constraintTop_toBottomOf="@+id/lblWeight" />
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:fontFamily="@font/montserrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/lblWeight"
+        app:layout_constraintStart_toStartOf="@+id/lblWeight"
+        app:layout_constraintTop_toTopOf="@+id/lblWeight" />
+
+    <TextView
+        android:id="@+id/txtHeight"
+        android:fontFamily="@font/montserrat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPHeight"
+        app:layout_constraintStart_toStartOf="@+id/txtPHeight"
+        app:layout_constraintTop_toTopOf="@+id/txtPHeight" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="402dp" />
+
+    <TextView
+        android:id="@+id/lblEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Emergency Contact"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="@+id/vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_btn"
+        android:text="Emergency Contact"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical"
+        app:layout_constraintTop_toBottomOf="@+id/lblEmergency" />
+
+    <TextView
+        android:id="@+id/lblJournal"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="36dp"
+        android:text="Health Journal"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnJournal"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="@+id/vertical"
+        app:layout_constraintTop_toBottomOf="@+id/btnContact" />
+
+    <TextView
+        android:id="@+id/lbldesc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:text="Add notes, track your pet's health"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintStart_toStartOf="@+id/vertical"
+        app:layout_constraintTop_toBottomOf="@+id/lblJournal" />
+
+    <ImageView
+        android:id="@+id/btnJournal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/circle_bg"
+        android:src="@drawable/ic_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContact" />
+
+    <TextView
+        android:id="@+id/lblVetMap"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="28dp"
+        android:text="Vet Map"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnVetMap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vertical"
+        app:layout_constraintTop_toBottomOf="@+id/lbldesc1" />
+
+    <TextView
+        android:id="@+id/lbldesc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="2dp"
+        android:text="Explore vets near you"
+        android:fontFamily="@font/montserrat"
+        app:layout_constraintStart_toStartOf="@+id/vertical"
+        app:layout_constraintTop_toBottomOf="@+id/lblVetMap" />
+
+    <ImageView
+        android:id="@+id/btnVetMap"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/circle_bg"
+        android:src="@drawable/ic_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJournal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "230418336107",
+    "firebase_url": "https://pawluv-24843-default-rtdb.firebaseio.com",
+    "project_id": "pawluv-24843",
+    "storage_bucket": "pawluv-24843.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230418336107:android:d2ba4c4e2d247b4a91642e",
+        "android_client_info": {
+          "package_name": "com.example.pawluv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230418336107-q1mgl3b4seeh44dru2hb7reisoabqv1d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pawluv",
+            "certificate_hash": "6a7335374691f2d8cc57c53a29e8942198fc1432"
+          }
+        },
+        {
+          "client_id": "230418336107-er1nnbcb4gme9apqh65lg84dk6a30aoc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkqVAXmfHOcAqQ0rj5yARlFc52oLXYdaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230418336107-er1nnbcb4gme9apqh65lg84dk6a30aoc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
